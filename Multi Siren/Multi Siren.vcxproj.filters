@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\Mod.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\Menu.cpp">
+      <Filter>source\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\PositionEditor.cpp">
+      <Filter>source\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\TextEditor.cpp">
+      <Filter>source\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\Window.cpp">
+      <Filter>source\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\item\ButtonKey.cpp">
+      <Filter>source\menu\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\item\CheckBox.cpp">
+      <Filter>source\menu\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\item\Item.cpp">
+      <Filter>source\menu\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\item\NumberRange.cpp">
+      <Filter>source\menu\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menu\item\Options.cpp">
+      <Filter>source\menu\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\input\Input.cpp">
+      <Filter>source\input</Filter>
+    </ClCompile>
+    <ClCompile Include="source\log\Log.cpp">
+      <Filter>source\log</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Vehicles.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Vehicle.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\windows\WindowMain.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AudioConfigs.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AudioConfig.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SirenConfig.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SirenConfigs.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\windows\WindowSiren.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="source\windows\WindowAudio.cpp">
+      <Filter>source\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Config.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\json_reader.cpp">
+      <Filter>source\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\json_value.cpp">
+      <Filter>source\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\json_writer.cpp">
+      <Filter>source\json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{1b518690-3da5-4208-9852-f80bfc2f88ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\menu">
+      <UniqueIdentifier>{ea37109f-ed88-41cb-83d8-54f543c164b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\menu\item">
+      <UniqueIdentifier>{0bb24072-078f-451a-bdf4-841a59efe93f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\input">
+      <UniqueIdentifier>{db07ac48-bf29-4df1-b752-cb733440a393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\log">
+      <UniqueIdentifier>{344d9b98-0c53-4615-89b2-f5a2831ba22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\windows">
+      <UniqueIdentifier>{9c5e0868-0b4d-4447-8272-24fb26112ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\json">
+      <UniqueIdentifier>{1cf55605-787b-463e-9731-4b3852b29a2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\menu\Menu.h">
+      <Filter>source\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\PositionEditor.h">
+      <Filter>source\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\TextEditor.h">
+      <Filter>source\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\Window.h">
+      <Filter>source\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\item\ButtonKey.h">
+      <Filter>source\menu\item</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\item\CheckBox.h">
+      <Filter>source\menu\item</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\item\Item.h">
+      <Filter>source\menu\item</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\item\NumberRange.h">
+      <Filter>source\menu\item</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menu\item\Options.h">
+      <Filter>source\menu\item</Filter>
+    </ClInclude>
+    <ClInclude Include="source\input\Input.h">
+      <Filter>source\input</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Mod.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\log\Log.h">
+      <Filter>source\log</Filter>
+    </ClInclude>
+    <ClInclude Include="source\pch.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Vehicles.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Vehicle.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\windows\WindowMain.h">
+      <Filter>source\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AudioConfig.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AudioConfigs.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SirenConfig.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SirenConfigs.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\windows\WindowSiren.h">
+      <Filter>source\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="source\windows\WindowAudio.h">
+      <Filter>source\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Config.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\json_tool.h">
+      <Filter>source\json</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\json_valueiterator.inl">
+      <Filter>source\json</Filter>
+    </None>
+  </ItemGroup>
+</Project>
