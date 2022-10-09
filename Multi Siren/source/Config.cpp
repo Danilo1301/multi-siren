@@ -4,6 +4,8 @@
 #include "AudioConfigs.h"
 #include "SirenConfigs.h"
 #include "Mod.h"
+#include "INIRead.h"
+#include "Keybinds.h"
 
 std::string Config::m_DataPath = "\\data\\";
 std::string Config::m_DataFile = "data.json";
@@ -42,7 +44,18 @@ void Config::SaveJSON() {
 }
 
 void Config::LoadJSON() {
-	Log::file << "[Config] Loading config" << std::endl;
+	Log::file << "[Config] Loading config.ini" << std::endl;
+
+	auto configIniPath = GetFullPath("config.ini");
+
+	Keybinds::openMenu.SetKey(INIRead::GetString(configIniPath, "Key_Open_Menu", "key"));
+	Keybinds::openMenu.ctrl = INIRead::GetBool(configIniPath, "Key_Open_Menu", "ctrl");
+	Keybinds::openMenu.shift = INIRead::GetBool(configIniPath, "Key_Open_Menu", "shift");
+	Keybinds::openMenu.alt = INIRead::GetBool(configIniPath, "Key_Open_Menu", "alt");
+
+	Log::file << "[Config] Ley open menu: " << Keybinds::openMenu.GetKeybindString() << std::endl;
+
+	Log::file << "[Config] Loading data" << std::endl;
 
 	CreatePath(m_DataPath);
 

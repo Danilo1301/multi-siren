@@ -179,3 +179,36 @@ static double GetAngleBetweenVectors(CVector v1, CVector v2, CVector v3) {
 	double v23 = sqrt(pow(v2.x - v3.x, 2) + pow(v2.y - v3.y, 2));
 	return acos((pow(v12, 2) + pow(v13, 2) - pow(v23, 2)) / (2 * (v12 * v13)));
 }
+
+static bool is_number(const std::string& s)
+{
+	std::string::const_iterator it = s.begin();
+	while (it != s.end() && std::isdigit(*it)) ++it;
+	return !s.empty() && it == s.end();
+}
+
+static std::string to_upper(std::string data) {
+	std::for_each(data.begin(), data.end(), [](char& c) {
+		c = ::toupper(c);
+		});
+	return data;
+}
+
+static std::string to_lower(std::string data) {
+	std::for_each(data.begin(), data.end(), [](char& c) {
+		c = ::tolower(c);
+		});
+	return data;
+}
+
+template <typename T>
+static std::string join(const T& v, const std::string& delim) {
+	std::ostringstream s;
+	for (const auto& i : v) {
+		if (&i != &v[0]) {
+			s << delim;
+		}
+		s << i;
+	}
+	return s.str();
+}

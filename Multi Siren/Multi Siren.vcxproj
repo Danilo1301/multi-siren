@@ -99,7 +99,9 @@
     <ClCompile Include="source\AudioConfig.cpp" />
     <ClCompile Include="source\AudioConfigs.cpp" />
     <ClCompile Include="source\Config.cpp" />
+    <ClCompile Include="source\INIRead.cpp" />
     <ClCompile Include="source\input\Input.cpp" />
+    <ClCompile Include="source\Keybinds.cpp" />
     <ClCompile Include="source\log\Log.cpp" />
     <ClCompile Include="source\menu\item\ButtonKey.cpp" />
     <ClCompile Include="source\menu\item\CheckBox.cpp" />
@@ -124,7 +126,10 @@
     <ClInclude Include="source\AudioConfig.h" />
     <ClInclude Include="source\AudioConfigs.h" />
     <ClInclude Include="source\Config.h" />
+    <ClInclude Include="source\INIRead.h" />
     <ClInclude Include="source\input\Input.h" />
+    <ClInclude Include="source\Keybind.h" />
+    <ClInclude Include="source\Keybinds.h" />
     <ClInclude Include="source\log\Log.h" />
     <ClInclude Include="source\menu\item\ButtonKey.h" />
     <ClInclude Include="source\menu\item\CheckBox.h" />

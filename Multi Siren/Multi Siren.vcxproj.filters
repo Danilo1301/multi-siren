@@ -76,6 +76,12 @@
     <ClCompile Include="..\include\json_writer.cpp">
       <Filter>source\json</Filter>
     </ClCompile>
+    <ClCompile Include="source\INIRead.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Keybinds.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="source">
@@ -172,6 +178,15 @@
     </ClInclude>
     <ClInclude Include="..\include\json_tool.h">
       <Filter>source\json</Filter>
+    </ClInclude>
+    <ClInclude Include="source\INIRead.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Keybind.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Keybinds.h">
+      <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

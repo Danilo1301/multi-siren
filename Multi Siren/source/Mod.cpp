@@ -5,6 +5,7 @@
 #include "SirenConfigs.h"
 #include "CMenuManager.h"
 #include "Config.h"
+#include "Keybinds.h"
 
 #include "windows/WindowMain.h"
 
@@ -37,10 +38,9 @@ void Mod::Update() {
 		}
 	}
 
-	if (Input::GetKey(17)) {
-		if (Input::GetKeyDown(77)) {
-			ToggleMenu();
-		}
+	if (Keybinds::openMenu.CheckKeybind())
+	{
+		ToggleMenu();
 	}
 
 	Menu::Update();
