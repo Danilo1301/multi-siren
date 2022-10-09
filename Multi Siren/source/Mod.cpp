@@ -10,14 +10,14 @@
 #include "windows/WindowMain.h"
 
 bool Mod::m_DebugEnabled = false;
-std::string Mod::m_Version = "1.0.0";
+std::string Mod::m_Version = "1.1";
 std::string Mod::m_Name = "Multi Siren";
 ISoundEngine* Mod::m_SoundEngine = nullptr;
 float Mod::m_AudioDistanceMult = 1.0f;
 float Mod::m_Volume = 1.0f;
 
 void Mod::Init() {
-	Log::file << "[Mod] Init" << std::endl;
+	Log::file << "[Mod] Init v" << Mod::m_Version << std::endl;
 
 	m_SoundEngine = irrklang::createIrrKlangDevice();
 
