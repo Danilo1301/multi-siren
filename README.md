@@ -1,3 +1,4 @@
 "# multi-siren" 
 
-CTRL + M
+CTRL + M - abre o menu
+CTRL + G - muda o som
