@@ -8,7 +8,7 @@
 
 <h1>How to install</h1>
 
-1. Download the .zip in [Releases](https://github.com/Danilo1301/gun-sounds/releases)
+1. Download the .zip in [Releases](https://github.com/Danilo1301/multi-siren/releases)
 2. Drag and drop the **modloader** folder to your GTA folder
 
 <h1>How to use</h1>
