@@ -2,9 +2,9 @@
 
 <h1>Required</h1>
 
-1. CLEO
-2. Modloader
-3. Version **GTA 1.0 US**
+1. Version **GTA 1.0 US**
+2. CLEO or any ASI Loader
+3. Modloader
 
 <h1>How to install</h1>
 
@@ -16,6 +16,9 @@
 * Turn the siren on to hear the custom sirens
 * CTRL + G: change the siren tone
 * CTRL + M: open the menu (for editing sounds)
+* CTRL + D: debug
+
+You can change the keys in the config.ini
 
 <h1>Made with</h1>
 

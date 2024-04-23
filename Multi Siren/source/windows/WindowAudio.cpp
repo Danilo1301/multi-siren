@@ -32,6 +32,7 @@ void WindowAudio::Create() {
 
 void WindowAudio::CreateEmptyAudio() {
 	auto window = Menu::AddWindow(Mod::m_Name, "Select Audio");
+	window->m_MaxItems = 12;
 
 	auto buttonBack = window->AddButton("[ Back ]");
 	buttonBack->m_OnClick = [window]() {

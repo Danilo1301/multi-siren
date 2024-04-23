@@ -19,5 +19,7 @@ public:
     static void ToggleMenu();
     static void SetPlayerControl(bool enabled);
 
+    static void PrintString(std::string text, int time);
+
     Mod();
 };

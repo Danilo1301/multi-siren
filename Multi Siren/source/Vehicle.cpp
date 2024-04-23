@@ -2,6 +2,7 @@
 #include "Mod.h"
 #include "AudioConfigs.h"
 #include "SirenConfigs.h"
+#include "Keybinds.h"
 
 bool testObject = false;
 
@@ -79,10 +80,12 @@ void Vehicle::UpdateInputs() {
 
 	if (!isPlayerVeh) return;
 
-	if (Input::GetKey(17)) {
-		if (Input::GetKeyDown(71)) {
-			ChangeSirenSound(1);
-		}
+	if (Keybinds::changeSirenTone.CheckKeybind())
+	{
+		ChangeSirenSound(1);
+
+		if(Mod::m_DebugEnabled)
+			Mod::PrintString("Changing siren tone " + std::to_string(m_CurrentSirenIndex + 1) + " / " + std::to_string(m_SirenConfig->sirens.size()), 1000);
 	}
 }
 

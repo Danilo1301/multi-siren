@@ -10,8 +10,8 @@
 #include "windows/WindowMain.h"
 
 bool Mod::m_DebugEnabled = false;
-std::string Mod::m_Version = "1.1";
-std::string Mod::m_Name = "Multi Siren";
+std::string Mod::m_Version = "1.2.0";
+std::string Mod::m_Name = "Multi Siren (by Danilo1301)";
 ISoundEngine* Mod::m_SoundEngine = nullptr;
 float Mod::m_AudioDistanceMult = 1.0f;
 float Mod::m_Volume = 1.0f;
@@ -32,7 +32,7 @@ void Mod::Update() {
 	Input::Update();
 
 	if (Input::GetKey(17) && Input::GetKey(16)) {
-		if (Input::GetKeyDown(68)) {
+		if (Input::GetKeyDown(68)) { // CTRL + SHIFT + D
 			m_DebugEnabled = !m_DebugEnabled;
 			CMessages::AddMessageJumpQ(m_DebugEnabled ? "Debug enabled" : "Debug disabled", 1000, 0, false);
 		}
@@ -109,6 +109,12 @@ void Mod::ToggleMenu() {
 
 void Mod::SetPlayerControl(bool enabled) {
 	Command<Commands::SET_PLAYER_CONTROL>(0, enabled);
+}
+
+void Mod::PrintString(std::string text, int time) {
+	static char message[256];
+	snprintf(message, 256, "%s", text.c_str());
+	CMessages::AddMessageJumpQ(message, time, 0, false);
 }
 
 Mod::Mod() {

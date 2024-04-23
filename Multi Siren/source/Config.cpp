@@ -53,7 +53,14 @@ void Config::LoadJSON() {
 	Keybinds::openMenu.shift = INIRead::GetBool(configIniPath, "Key_Open_Menu", "shift");
 	Keybinds::openMenu.alt = INIRead::GetBool(configIniPath, "Key_Open_Menu", "alt");
 
-	Log::file << "[Config] Ley open menu: " << Keybinds::openMenu.GetKeybindString() << std::endl;
+	Log::file << "[Config] Key open menu: " << Keybinds::openMenu.GetKeybindString() << std::endl;
+
+	Keybinds::changeSirenTone.SetKey(INIRead::GetString(configIniPath, "Key_Change_Siren_Tone", "key"));
+	Keybinds::changeSirenTone.ctrl = INIRead::GetBool(configIniPath, "Key_Change_Siren_Tone", "ctrl");
+	Keybinds::changeSirenTone.shift = INIRead::GetBool(configIniPath, "Key_Change_Siren_Tone", "shift");
+	Keybinds::changeSirenTone.alt = INIRead::GetBool(configIniPath, "Key_Change_Siren_Tone", "alt");
+
+	Log::file << "[Config] Key change siren tone: " << Keybinds::changeSirenTone.GetKeybindString() << std::endl;
 
 	Log::file << "[Config] Loading data" << std::endl;
 

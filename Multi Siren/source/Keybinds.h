@@ -7,6 +7,7 @@
 class Keybinds {
 public:
 	static Keybind openMenu;
+	static Keybind changeSirenTone;
 
 	//static Json::Value ToJSON();
 	//static void FromJSON(Json::Value value);
