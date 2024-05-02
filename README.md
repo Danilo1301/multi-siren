@@ -13,10 +13,10 @@
 
 <h1>How to use</h1>
 
-* Turn the siren on to hear the custom sirens
+* Turn the siren on to hear the custom sirens (press H)
 * CTRL + G: change the siren tone
 * CTRL + M: open the menu (for editing sounds)
-* CTRL + D: debug
+* CTRL + SHIFT + D: debug
 
 You can change the keys in the config.ini
 
